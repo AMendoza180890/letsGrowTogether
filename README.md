@@ -1,2 +1,2 @@
-# letsGrowTogether
-letsGrowTogether campaña de patrocinio de Tesoros de Dios
+# volunteers
+Pagina y sistema de voluntarios para Tesoros de Dios
