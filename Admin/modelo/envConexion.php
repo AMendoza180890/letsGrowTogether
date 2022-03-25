@@ -1,12 +1,12 @@
 <?php
       // en variables
-      //  $DATABASENAME = "tesorosd_bdvolunteers";
+      //  $DATABASENAME = "tesorosd_bdtogether";
       //  $SERVIDOR = "localhost";
-      //  $USER = "tesorosd_adminv";
+      //  $USER = "tesorosd_admint";
       //  $PASSW = "3kaBZmmJ90zR";
 
       //conexion en local
-      $DATABASENAME = "bdvolunteers";
+      $DATABASENAME = "bdtogether";
       $SERVIDOR = "localhost";
       $USER = "root";
       $PASSW = "";

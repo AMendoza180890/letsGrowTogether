@@ -10,11 +10,11 @@
                      <div class="row">
                          <div class="col-xl-12">
                              <div class="slider_text ">
-                                 <h3 style="color:#fff;"> <span>Volunteer</span> <br> Programs </h3>
-                                 <p style="color:#fff;">There are many ways that you can volunteer with Tesoros de Dios. <br> Get involved and make a difference today!.</p>
+                                 <h3 style="color:#fff;"> <span>Let's Grow</span> <br> Together </h3>
+                                 <!-- <p style="color:#fff;">There are many ways that you can volunteer with Tesoros de Dios. <br> Get involved and make a difference today!.</p>
                                  <p class="parrafo2" style="color:#fff;">Our ministry exists because of the hundreds of dedicated volunteers <br> who have served over the years.<br> We are so grateful for your support and participation as we share <br> the gospel and serve those affected by disability in Nicaragua.<br> <br> 
                                     Thank you!
-                                </p>
+                                </p> -->
                                  <!-- <a href="#" class="boxed-btn3">More Information</a> -->
                              </div>
                          </div>

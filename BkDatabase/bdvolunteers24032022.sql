@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-01-2022 a las 02:32:45
+-- Tiempo de generación: 25-03-2022 a las 02:04:07
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.11
 
@@ -18,8 +18,25 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `volunteer`
+-- Base de datos: `bdvolunteers`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `catmensajes`
+--
+
+CREATE TABLE `catmensajes` (
+  `id` int(11) NOT NULL,
+  `nombres` text NOT NULL,
+  `apellidos` text NOT NULL,
+  `telefono` text NOT NULL,
+  `email` text NOT NULL,
+  `tipoVoluntario` text NOT NULL,
+  `nombreLiderGrupo` text NOT NULL,
+  `comentario` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -44,25 +61,6 @@ INSERT INTO `catroles` (`rolid`, `catRolesDescripcion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `encabezadocampaign`
---
-
-CREATE TABLE `encabezadocampaign` (
-  `id` int(11) NOT NULL,
-  `titulo` text NOT NULL,
-  `descripcion` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='informacion de encabezado';
-
---
--- Volcado de datos para la tabla `encabezadocampaign`
---
-
-INSERT INTO `encabezadocampaign` (`id`, `titulo`, `descripcion`) VALUES
-(1, 'Christmas Giving', '\"But we have this treasure in jars of clay to show that this all surpassing power is from God and not from us.\r\nSo we fix our eyes not on what is seen, but on what is unseen.\r\nFor what is seen is temporary, but what is unseen is eternal.\"\r\n2 CORINTHIANS 4:7,18');
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `estado`
 --
 
@@ -78,36 +76,6 @@ CREATE TABLE `estado` (
 INSERT INTO `estado` (`id`, `descripcion`) VALUES
 (1, 'Activo'),
 (2, 'Desactivado');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `seccioncampaign`
---
-
-CREATE TABLE `seccioncampaign` (
-  `id` int(11) NOT NULL,
-  `titulo` text NOT NULL,
-  `descripcionCorta` text NOT NULL,
-  `descripcionLarga` text NOT NULL,
-  `imagen` text NOT NULL,
-  `costo` text NOT NULL,
-  `cantidad` text NOT NULL,
-  `enlace` text NOT NULL,
-  `estado` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Seccion catalogo';
-
---
--- Volcado de datos para la tabla `seccioncampaign`
---
-
-INSERT INTO `seccioncampaign` (`id`, `titulo`, `descripcionCorta`, `descripcionLarga`, `imagen`, `costo`, `cantidad`, `enlace`, `estado`) VALUES
-(1, 'titulo1', 'ejemplo descripcion 1', 'descripcion larga de ejemplo', 'vista/img/usuario/U876.jpg', '20', '10', 'https://www.google.com', 2),
-(2, 'Articulo1', 'Prueba del articulo1', 'prueba', 'vista/img/usuario/U472.jpg', '15', '20', 'https://www.facebook.com', 1),
-(3, 'Articulo2', 'prueba del articulo numero 2', 'Texto prueba del ejemplo', 'vista/img/usuario/U427.jpg', '30', '30', 'https://www.youtube.com', 1),
-(4, 'Articulo3', 'Prueba del articulo3', 'Descripcion Larga del articulo 3', 'vista/img/usuario/U855.jpg', '10', '12', 'https://www.instagram.com', 1),
-(5, 'Articulo4', 'Prueba del articulo4', 'descripcion larga del articulo 4', 'vista/img/usuario/U507.jpg', '12', '20', 'https://www.tweeter.com', 1),
-(6, 'Articulo5', 'Prueba del articulo5', 'prueba de descripcion larga de articulo 5', 'vista/img/usuario/U736.jpg', '10', '20', 'https://www.instagram.com', 1);
 
 -- --------------------------------------------------------
 
@@ -158,29 +126,22 @@ INSERT INTO `usuarios` (`id`, `usuario`, `clave`, `foto`, `rolid`) VALUES
 --
 
 --
+-- Indices de la tabla `catmensajes`
+--
+ALTER TABLE `catmensajes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `catroles`
 --
 ALTER TABLE `catroles`
   ADD PRIMARY KEY (`rolid`);
 
 --
--- Indices de la tabla `encabezadocampaign`
---
-ALTER TABLE `encabezadocampaign`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `estado`
 --
 ALTER TABLE `estado`
   ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `seccioncampaign`
---
-ALTER TABLE `seccioncampaign`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `estado` (`estado`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -194,28 +155,22 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `catmensajes`
+--
+ALTER TABLE `catmensajes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `catroles`
 --
 ALTER TABLE `catroles`
   MODIFY `rolid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de la tabla `encabezadocampaign`
---
-ALTER TABLE `encabezadocampaign`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT de la tabla `estado`
 --
 ALTER TABLE `estado`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `seccioncampaign`
---
-ALTER TABLE `seccioncampaign`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
@@ -226,12 +181,6 @@ ALTER TABLE `usuarios`
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `seccioncampaign`
---
-ALTER TABLE `seccioncampaign`
-  ADD CONSTRAINT `seccioncampaign_ibfk_1` FOREIGN KEY (`estado`) REFERENCES `estado` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `usuarios`
