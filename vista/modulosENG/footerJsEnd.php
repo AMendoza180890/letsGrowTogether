@@ -23,6 +23,7 @@
 <script src="vista/js/jquery.form.js"></script>
 <script src="vista/js/jquery.validate.min.js"></script>
 <script src="vista/js/mail-script.js"></script>
+<script src="vista/js/together.js"></script>
 
 <script src="vista/js/main.js"></script>
 <script>
