@@ -49,9 +49,9 @@
                             <li><a href="https://tesorosdedios.org/">Home</a></li>
                             <li><a href="https://tesorosdedios.org/pray/">Support</a></li>
                             <li><a href="https://tesorosdedios.org/prayer-partners/">Prayer Partners</a></li>
-                            <li>
+                            <!-- <li>
                                 <a href="ESP"><img src="vista/img/bandera/ni.png" style="height:30px; width:30px;" alt="Version Español"></a>
-                            </li>
+                            </li> -->
                         </ul>
 
                     </div>

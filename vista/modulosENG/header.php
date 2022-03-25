@@ -32,9 +32,9 @@
                                 <li>
                                     <a href="tel:50522654038"> <i class="fa fa-phone">(505)2265-4038</i></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="ESP"><img src="vista/img/bandera/ni.png" style="height:30px; width:30px;" alt="Version Español"></a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
