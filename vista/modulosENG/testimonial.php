@@ -10,10 +10,10 @@
                             <!-- <div class="quote">
                                 <i class="flaticon-straight-quotes"></i>
                             </div> -->
-                            <p style="font-size: 2em;">Alone we can do so little; together we can do so much.</p>
-                            <div class="testmonial_author">
+                            <p style="font-size: 2em;">Through the Sponsorship Program, you can surround a child with a disability with love.</p>
+                            <!-- <div class="testmonial_author">
                                 <h4>Helen Keller</h4>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
