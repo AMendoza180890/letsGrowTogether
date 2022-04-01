@@ -121,7 +121,7 @@
                 <button type="button" class="btn btn-info w-100" data-dismiss="modal">Make a Sponsor</button>
                 <!-- </div> -->
             </div>
-
+            
             <div class="col-sm-3">
                 <img src="vista/img/testmonial/foto.jpg" alt="img" class="w-100 img-responsive">
                 <!-- <div class="btn-group"> -->
