@@ -120,6 +120,13 @@ address {
     line-height: inherit
 }
 
+
+/* color para imagen de estudiantes patrocinados */
+
+.colorImg {
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
 dl,
 ol,
 ul {
@@ -8263,6 +8270,19 @@ button.bg-dark:hover {
 }
 
 @media (min-width:768px) {
+    .box {
+        transition: box-shadow .3s;
+        /* width: 300px;
+        height: 500px;
+        margin: 50px; */
+        /* border-radius: 10px;
+        border: 1px solid #ccc; */
+        /* background: #fff;
+        float: left; */
+    }
+    .box:hover {
+        box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+    }
     .m-md-0 {
         margin: 0!important
     }
@@ -9212,8 +9232,8 @@ a.text-dark:hover {
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         text-shadow: none!important;
         box-shadow: none!important
     }

@@ -3,7 +3,7 @@ require_once "Admin/modelo/conexionBD.php";
 class childm extends conexionBD{
     public static function showChildM(){
         try {
-            $pdo = conexionBD::conexion()->prepare("SELECT id, nombre, edad, diagnostico, funfact, foto FROM catchild");
+            $pdo = conexionBD::conexion()->prepare("SELECT id, nombre, edad, diagnostico, funfact, foto, estado FROM catchild");
             
             $pdo -> execute();
 
